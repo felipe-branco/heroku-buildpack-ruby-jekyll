@@ -10,5 +10,4 @@ heroku_buildpack_ruby_install_ruby "$BIN_DIR" "$BUILDPACK_DIR"
 
 $heroku_buildpack_ruby_dir/bin/ruby $BIN_DIR/support/ruby_compile $@
 
-BUILD_DIR=${1:-}
-cd "$BUILD_DIR/web"
+BUILD_DIR="${1:-}/web"
